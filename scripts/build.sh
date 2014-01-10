@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Use top level directory for execution
+pushd ..
+
 clean up "dirt" from previous build
 # see Bug 420078  
 git submodule foreach git clean -f -d -x
