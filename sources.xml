@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2014 Red Hat Inc.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the Eclipse Distribution License v1.0
+  which accompanies this distribution, and is available at
+  http://www.eclipse.org/org/documents/edl-v10.php
+
+  Contributors:
+     Mat Booth - initial implementation
+-->
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+  <id>sources</id>
+  <formats>
+    <!-- A tar.xz format archive would be better but assembly plugin and plexus archiver
+         do not support it yet -->
+    <format>tar.bz2</format>
+  </formats>
+  <includeBaseDirectory>true</includeBaseDirectory>
+  <fileSets>
+    <fileSet>
+      <directory>${project.basedir}</directory>
+      <outputDirectory>/</outputDirectory>
+      <excludes>
+        <!-- Exclude pre-built binary artifacts -->
+        <exclude>**/target/**</exclude>
+        <exclude>**/*.exe</exclude>
+        <exclude>**/*.so</exclude>
+        <exclude>**/*.dll</exclude>
+        <exclude>**/*.jnilib</exclude>
+        <exclude>rt.equinox.binaries/org.eclipse.equinox.executable/bin/**</exclude>
+        <exclude>rt.equinox.binaries/org.eclipse.equinox.executable/contributed/**</exclude>
+        <!-- Exclude scripts and stuff that distro integrators don't need -->
+        <exclude>bootstrap/**</exclude>
+        <exclude>devutils/**</exclude>
+        <exclude>production/**</exclude>
+        <exclude>scripts/**</exclude>
+        <exclude>streams/**</exclude>
+        <exclude>workspace/**</exclude>
+      </excludes>
+    </fileSet>
+  </fileSets>
+</assembly>
