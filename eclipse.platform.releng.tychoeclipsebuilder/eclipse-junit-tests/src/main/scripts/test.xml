@@ -201,17 +201,6 @@
     </condition>
     <condition
       property="platformArchive"
-      value="eclipse-platform-${previousReleaseVersion}-macosx-cocoa.tar.gz">
-      <and>
-        <os family="mac" />
-        <os family="unix" />
-        <!-- should not need, as long as x86_64 rules (above) comes first
-          <os arch="i386" />
-        -->
-      </and>
-    </condition>
-    <condition
-      property="platformArchive"
       value="eclipse-platform-${previousReleaseVersion}-win32.zip">
       <and>
         <os family="windows" />
@@ -985,36 +974,6 @@
         <equals
           arg1="${arch}"
           arg2="ppc" />
-      </and>
-    </condition>
-    <condition
-      property="runtimeArchive"
-      value="eclipse-SDK-${buildIdToUse}-macosx-cocoa-ppc.tar.gz">
-      <and>
-        <equals
-          arg1="${os}"
-          arg2="macosx" />
-        <equals
-          arg1="${ws}"
-          arg2="cocoa" />
-        <equals
-          arg1="${arch}"
-          arg2="ppc" />
-      </and>
-    </condition>
-    <condition
-      property="runtimeArchive"
-      value="eclipse-SDK-${buildIdToUse}-macosx-cocoa.tar.gz">
-      <and>
-        <equals
-          arg1="${os}"
-          arg2="macosx" />
-        <equals
-          arg1="${ws}"
-          arg2="cocoa" />
-        <equals
-          arg1="${arch}"
-          arg2="x86" />
       </and>
     </condition>
     <condition
