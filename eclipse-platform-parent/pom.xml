@@ -162,6 +162,11 @@
 
     <qualifier.format>'v'yyyyMMdd-HHmm</qualifier.format>
 
+    <!-- Since we append output of various tests, write to a common folder besides tests -->
+    <!-- it's recommended to override that to an absolute valuein specific Hudson configurations
+         and Sonar integration -->
+    <jacoco.destFile>${project.basedir}/../target/jacoco.exec</jacoco.destFile>
+    <sonar.jacoco.reportPath>${jacoco.destFile}</sonar.jacoco.reportPath>
   </properties>
 
   <distributionManagement>
@@ -449,6 +454,22 @@
             </configuration>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.7.6.201602180812</version>
+        <executions>
+          <execution>
+            <id>jacoco-agent</id>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <append>true</append>
+        </configuration>
       </plugin>
     </plugins>
     <pluginManagement>
