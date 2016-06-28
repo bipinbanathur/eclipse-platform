@@ -77,7 +77,7 @@ else
 fi
 
 # STREAM is the three digit release number, such as 4.7.0 or 4.6.1.
-# STREAM=4.6.0
+# STREAM=4.7.0
 if [[ -z "${STREAM}" ]]
 then
   echo -e "\n\t[ERROR] STREAM must be defined for ${0##*/}"

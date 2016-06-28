@@ -18,23 +18,23 @@ source localBuildProperties.shsource 2>/dev/null
 JAVA_8_HOME=/shared/common/jdk1.8.0_x64-latest
 export JAVA_HOME=${JAVA_8_HOME}
 buildIdToTest=${BUILD_ID:-"I20160314-2000"}
-buildIdToCompare="4.5/R-4.5.2-201602121500"
+buildIdToCompare="4.6/R-4.6-201606061100"
 build_type=${buildIdToTest:0:1}
 build_dir_root="${BUILD_HOME}/4${build_type}/siteDir/eclipse/downloads/drops4"
 build_update_root="${BUILD_HOME}/4${build_type}/siteDir/updates"
 dl_dir_root="/home/data/httpd/download.eclipse.org/eclipse/downloads/drops4"
 if [[ ${build_type} == "N" ]]
 then
-  update_dir_segment="4.6-N-builds"
+  update_dir_segment="4.7-N-builds"
 elif [[ ${build_type} == "M" ]]
 then
-  update_dir_segment="4.5-M-builds"
+  update_dir_segment="4.6-M-builds"
 elif [[ ${build_type} == "I" ]]
 then
-  update_dir_segment="4.6-I-builds"
+  update_dir_segment="4.7-I-builds"
 elif [[ ${build_type} == "Y" ]] 
 then
-  update_dir_segment="4.6-Y-builds"
+  update_dir_segment="4.7-Y-builds"
 else
   echo -e "\nERROR: Unhandled build type: ${build_type} so update_dir_segment undefined: $update_dir_segment"
 fi
