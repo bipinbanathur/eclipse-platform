@@ -478,6 +478,12 @@ fi
 $SCRIPT_PATH/promote-build.sh $BUILD_ENV_FILE 2>&1 | tee $logsDirectory/mb090_promote-build_output.txt
 checkForErrorExit $? "Error occurred during promote-build"
 
+# Start the promotion of the build to the website
+echo "Starting Promotion of build to website" | tee $logsDirectory/mb090_promote-build_output.txt
+$SCRIPT_PATH/sdk/promotion/sdkPromotionCronJob.sh 2>&1 | tee $logsDirectory/mb090_promote-build_output.txt
+checkForErrorExit $? "Error occurred during promotion of eclipse build"
+echo "End of Promotion of build to website" | tee $logsDirectory/mb090_promote-build_output.txt
+
 # check for dirt in working tree. Note. we want near very end, since even things
 # like "publishing" in theory could leave dirt behind.
 $SCRIPT_PATH/dirtReport.sh $BUILD_ENV_FILE >$logsDirectory/dirtReport.txt
