@@ -68,17 +68,9 @@ then
   EBUILDER_HASH=master
 fi
 
-# Here is content of promotion script:
-ptimestamp=$( date +%Y%m%d%H%M )
-echo "#!/usr/bin/env bash" >  ${queueLocation}/${scriptName}
-echo "# promotion script created at $ptimestamp" >>  ${queueLocation}/${scriptName}
+# Here is command for promotion:
 
-echo "${UTILITIES_HOME}/sdk/promotion/syncDropLocation.sh $STREAM $BUILD_ID $EBUILDER_HASH $BUILD_ENV_FILE" >> ${queueLocation}/${scriptName}
-
-# we restrict "others" rights for a bit more security or safety from accidents
-chmod -v ug=rwx,o-rwx ${queueLocation}/${scriptName}
-
-
+${UTILITIES_HOME}/sdk/promotion/syncDropLocation.sh $STREAM $BUILD_ID $EBUILDER_HASH $BUILD_ENV_FILE
 
 # we do not promote equinox, if BUILD_FAILED since no need.
 # we also do not promote if Patch build or Y-build or experimental (since, to date, those are not "for" equinox). 
@@ -120,3 +112,4 @@ fi
 echo "normal exit from promote phase of $(basename $0)"
 
 exit 0
+
