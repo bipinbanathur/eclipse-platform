@@ -349,6 +349,10 @@ fi
   echo "# " >> ${buildDirectory}/directory.txt
   cat $STREAMS_PATH/repositories_${PATCH_OR_BRANCH_LABEL}.txt >> ${buildDirectory}/directory.txt
   echo "# " >> ${buildDirectory}/directory.txt
+  
+  echo "# gut submodule status output:"  >> ${buildDirectory}/directory.txt
+  git submodule status >> ${buildDirectory}/directory.txt
+  echo "# " >> ${buildDirectory}/directory.txt
 
 
   # = = = = relengirectory.txt section
