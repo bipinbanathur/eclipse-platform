@@ -1634,7 +1634,7 @@
     depends="init">
     <runTests testPlugin="org.eclipse.text.tests" />
   </target>
-
+	
   <target
     name="jface"
     depends="init">
@@ -1904,6 +1904,12 @@
     name="uiworkbenchtexteditor"
     depends="init">
     <runTests testPlugin="org.eclipse.ui.workbench.texteditor.tests" />
+  </target>
+
+  <target
+    name="genericEditor"
+    depends="init">
+    <runTests testPlugin="org.eclipse.ui.genericeditor.tests" />
   </target>
 
   <target
@@ -2208,6 +2214,7 @@
     <antcall target="uieditors" />
     <antcall target="uinavigator" />
     <antcall target="uiworkbenchtexteditor" />
+  	<antcall target="genericEditor" />
 
     <antcall target="equinoxhttpservlet" />
     <antcall target="ua" />
