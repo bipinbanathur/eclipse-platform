@@ -1907,6 +1907,12 @@
   </target>
 
   <target
+    name="genericEditor"
+    depends="init">
+    <runTests testPlugin="org.eclipse.ui.genericeditor.tests" />
+  </target>
+
+  <target
     name="update"
     depends="init">
     <runTests testPlugin="org.eclipse.update.tests.core" />
@@ -2208,6 +2214,7 @@
     <antcall target="uieditors" />
     <antcall target="uinavigator" />
     <antcall target="uiworkbenchtexteditor" />
+    <antcall target="genericEditor" />
 
     <antcall target="equinoxhttpservlet" />
     <antcall target="ua" />
