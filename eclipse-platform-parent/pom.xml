@@ -114,7 +114,7 @@
       This jetty-version is used by the help system in building the pre-compiled JSPs,
       and should change when ever our "shipped" version of Jetty changes.
     -->
-    <jetty-version>9.3.5.v20151012</jetty-version>
+    <jetty-version>9.3.14.v20161028</jetty-version>
 
     <!--
       Production bundles are produced by ignoring the compiler warnings specified
