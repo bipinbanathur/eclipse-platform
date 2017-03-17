@@ -426,6 +426,13 @@
         arg1="${testPlatform}"
         arg2="linux" />
     </condition>
+  	<condition
+  	  property="getArtifacts"
+  	  value="getlinzips">
+  	  <equals
+  	    arg1="${testPlatform}"
+  	    arg2="linuxjava9" />
+  	</condition>
     <condition
       property="getArtifacts"
       value="getlinzips32">
