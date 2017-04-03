@@ -24,7 +24,16 @@
     <!--Property used in parent pom which if defined disables activation of build-individual-bundles profile -->
     <aggregatorBuild>true</aggregatorBuild>
   </properties>
+<<<<<<< HEAD   (96aed5 Build input for build I20170220-2000)
 
+=======
+  <pluginRepositories>
+    <pluginRepository>
+      <id>tycho-snapshots</id>
+      <url>https://repo.eclipse.org/content/repositories/tycho-snapshots/</url>
+    </pluginRepository>
+  </pluginRepositories>
+>>>>>>> BRANCH (e4b341 Build input for build I20170402-2000)
   <modules>
 
     <module>eclipse-platform-parent</module>
