@@ -106,22 +106,38 @@
               </execution>
             </executions>
           </plugin>
-
-            <plugin>
-              <groupId>org.eclipse.cbi.maven.plugins</groupId>
-              <artifactId>eclipse-macsigner-plugin</artifactId>
-              <version>${cbi-plugins.version}</version>
-              <executions>
-                <execution>
-                  <goals>
-                    <goal>sign</goal>
-                  </goals>
-                  <phase>package</phase>
-                </execution>
-              </executions>
-            </plugin>
-
+          <plugin>
+            <groupId>org.eclipse.cbi.maven.plugins</groupId>
+            <artifactId>eclipse-macsigner-plugin</artifactId>
+            <version>${cbi-plugins.version}</version>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+                <phase>package</phase>
+              </execution>
+            </executions>
+          </plugin>
         </plugins>
+        <plugin>
+          <groupId>org.eclipse.cbi.maven.plugins</groupId>
+          <artifactId>eclipse-dmg-packager</artifactId>
+          <version>${cbi-plugins.version}</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>package-dmg</goal>
+              </goals>
+              <phase>integration-test</phase>
+              <configuration>
+                <source>${project.build.directory}/products/org.eclipse.sdk.ide-macosx.cocoa.x86_64.tar.gz</source>
+                <continueOnFail>true</continueOnFail>
+                <sign>true</sign>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
       </build>
     </profile>
   </profiles>

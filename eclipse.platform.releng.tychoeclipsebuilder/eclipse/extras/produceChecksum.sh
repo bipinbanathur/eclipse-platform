@@ -65,6 +65,17 @@ do
   fi
 done
 
+#array of dmgfiles
+dmgfiles=`ls *.zip`
+
+for dmgfile in ${dmgfiles}
+do
+  echo [sha256] ${dmgfile}
+  sha256sum -b ${dmgfile} | tee checksum/${zipfile}.sha256 >>${allCheckSumsSHA256}
+  echo [sha512] ${dmgfile}
+  sha512sum -b ${dmgfile} | tee checksum/${zipfile}.sha512  >>${allCheckSumsSHA512}
+done
+
 #array of tar.gzip files
 gzipfiles=`ls *.gz`
 
