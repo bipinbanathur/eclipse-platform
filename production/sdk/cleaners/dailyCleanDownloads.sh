@@ -22,7 +22,7 @@ fi
 echo -e "\n\tDaily clean of ${HOSTNAME} download server on $(date )\n"
 
 #
-# Checks whether a build can be retained or not. 
+# Checks whether a build can be retained or not.
 # returns 0  if the build can be retained
 #
 function canBeRetained ()
@@ -46,7 +46,7 @@ function canBeRetained ()
 
 function removeBuild ()
 {
-  buildName=$1
+  buildname=$1
   rm -fr $buildname
   RC=$?
   if [[ $RC = 0 ]];then
@@ -90,7 +90,7 @@ areNotToDelete=$(printf '%s\n' "${newest[@]}" | paste -sd '|')
 
 currentWeekNum=0 #week number from start of the year user to identify the week in which the build is created
 found=0 #it will be 1 when we found a build that can be retained in that week
-  
+
 for buildname in ${allOldBuilds}; do
   if [[ $buildname =~ $areNotToDelete ]]
   then
@@ -119,18 +119,16 @@ for buildname in ${allOldBuilds}; do
     if [ $weekNum -eq $currentWeekNum ]; then
       if [ $retain -eq 0 -a $found -ne 1 ]; then  # we didn't found a build that can be retained in the current week
         found=1
-        echo retaining $buildId
       else
-        echo removing $buildId
+        removeBuild $buildname
       fi
     else #week changed
       currentWeekNum=$weekNum
       found=0
       if [ $retain -eq 0 -a $dayOfWeek -eq 1 ]; then
         found=1
-        echo retaining $buildId
       else
-        echo removing $buildId
+        removeBuild $buildname
       fi
     fi
   fi
