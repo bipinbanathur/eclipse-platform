@@ -33,7 +33,7 @@ echo -e "\tbuildIdToTest: ${BUILD_ID}"
 # TODO: we could have a "previous_release" sort of variable that 
 # would be defined in parent pom or build_eclipse_org.shsource so that
 # we do not need to change this source. 
-buildIdToCompare="4.6/R-4.6.3-201703010400"
+buildIdToCompare="4.6/R-4.6-201606061100"
 
 build_type=${buildIdToTest:0:1}
 echo -e "\tbuild_type: ${build_type}"
@@ -77,8 +77,8 @@ then
 elif [[ ${build_type} == "M" ]]
 then
   update_dir_segment="4.6-M-builds"
-  buildIdToCompare="4.6/R-4.6.3-201703010400"
-  echo -e "\tlatest_R_build: R-4.6.3-201703010400"
+  buildIdToCompare="4.6/R-4.6-201606061100"
+  echo -e "\tlatest_R_build: R-4.6-201606061100"
 elif [[ ${build_type} == "I" ]]
 then
   update_dir_segment="4.7-I-builds"
@@ -87,27 +87,27 @@ then
   # compared to the latest M-build, instead of having to manually update this value
   # TODO: But, the "4.6" part has to be updated every year. There is probably
   # some other variable to "infer" that from so this script never has to change.
-  latest_M_build=$(latestSimpleRepo "${repo_root}/4.6-M-builds" "M20*")
-  RC=$?
-  if [[ $RC != 0 ]]
-  then
-    exit $RC
-  fi
-  echo -e "\tlatest_M_build: $latest_M_build"
-  buildIdToCompare="4.6-M-builds/${latest_M_build}"
+  #latest_M_build=$(latestSimpleRepo "${repo_root}/4.6-M-builds" "M20*")
+  #RC=$?
+  #if [[ $RC != 0 ]]
+  #then
+  #  exit $RC
+  #fi
+  #echo -e "\tlatest_M_build: $latest_M_build"
+  buildIdToCompare="4.6/R-4.6-201606061100"
 elif [[ ${build_type} == "Y" ]]
 then
   update_dir_segment="4.7-Y-builds"
   # Note: we use same value for Y-builds as for I-builds, since conceptually
   # they are the same, except that Y-builds use some code from BETA_JAVA9 branch.
-  latest_M_build=$(latestSimpleRepo "${repo_root}/4.6-M-builds" "M20*")
-  RC=$?
-  if [[ $RC != 0 ]]
-  then
-    exit $RC
-  fi
-  echo -e "\tlatest_M_build: $latest_M_build"
-  buildIdToCompare="4.6-M-builds/${latest_M_build}"
+  #latest_M_build=$(latestSimpleRepo "${repo_root}/4.6-M-builds" "M20*")
+  #RC=$?
+  #if [[ $RC != 0 ]]
+  #then
+  #  exit $RC
+  #fi
+  #echo -e "\tlatest_M_build: $latest_M_build"
+  buildIdToCompare="4.6/R-4.6-201606061100"
 else
   echo -e "\nERROR: Unhandled build type: ${build_type} so update_dir_segment undefined: $update_dir_segment"
   echo -e "\n\tand repo reports not produced."
