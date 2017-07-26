@@ -33,6 +33,7 @@
   <modules>
 
     <module>eclipse-platform-parent</module>
+    <module>eclipse-platform-sources</module>
 
     <module>eclipse.platform.releng.prereqs.sdk</module>
 
