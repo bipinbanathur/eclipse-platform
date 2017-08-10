@@ -1,0 +1,7 @@
+Verified+1: Hudson CI
+Code-Review+2: Alexander Kurtakov <akurtako@redhat.com>
+Submitted-by: Alexander Kurtakov <akurtako@redhat.com>
+Submitted-at: Thu, 10 Aug 2017 09:40:40 -0400
+Reviewed-on: https://git.eclipse.org/r/34637
+Project: platform/eclipse.platform.releng.aggregator
+Branch: refs/heads/master
