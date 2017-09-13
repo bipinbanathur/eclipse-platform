@@ -552,13 +552,17 @@
           <artifactId>tycho-p2-plugin</artifactId>
           <version>${tycho.version}</version>
           <configuration>
-            <baselineMode>warn</baselineMode>
+            <baselineMode>failCommon</baselineMode>
             <baselineReplace>all</baselineReplace>
             <baselineRepositories>
               <repository>
                 <url>${comparator.repo}</url>
               </repository>
             </baselineRepositories>
+            <ignoredPatterns>
+              <pattern>META-INF/ECLIPSE_.RSA</pattern>
+              <pattern>META-INF/ECLIPSE_.SF</pattern>
+            </ignoredPatterns>
           </configuration>
         </plugin>
         <plugin>
