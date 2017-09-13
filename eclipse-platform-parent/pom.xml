@@ -716,6 +716,25 @@
               <defaultP2Metadata>false</defaultP2Metadata>
             </configuration>
           </plugin>
+          <plugin>
+            <groupId>org.eclipse.tycho.extras</groupId>
+            <artifactId>tycho-p2-extras-plugin</artifactId>
+            <version>${tycho.version}</version>
+            <executions>
+              <execution>
+                <id>compare-attached-artifacts-with-release</id>
+                <goals>
+                  <goal>compare-version-with-baseline</goal>
+                </goals>
+                <configuration>
+                  <baselines>
+                    <baseline>http://download.eclipse.org/eclipse/updates/4.7/</baseline>
+                    <baseline>http://download.eclipse.org/eclipse/updates/4.8/</baseline>
+                  </baselines>                
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
         </plugins>
       </build>
     </profile>
