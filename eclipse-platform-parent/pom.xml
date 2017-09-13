@@ -536,6 +536,10 @@
                 <url>${comparator.repo}</url>
               </repository>
             </baselineRepositories>
+            <ignoredPatterns>
+              <pattern>META-INF/ECLIPSE_.RSA</pattern>
+              <pattern>META-INF/ECLIPSE_.MF</pattern>
+            </ignoredPatterns>
           </configuration>
         </plugin>
         <plugin>
