@@ -636,6 +636,21 @@
           <layout>p2</layout>
         </repository>
       </repositories>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.eclipse.tycho.extras</groupId>
+            <artifactId>compare-versions-with-baseline</artifactId>
+            <version>${tycho-version}</version>
+            <configuration>
+              <baselines>
+                <baseline>http://download.eclipse.org/eclipse/updates/4.7/</baseline>
+                <baseline>http://download.eclipse.org/eclipse/updates/4.8/</baseline>
+              </baselines>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
     </profile>
     <profile>
       <id>eclipse-sign</id>
