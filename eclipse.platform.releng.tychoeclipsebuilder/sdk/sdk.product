@@ -7,12 +7,18 @@
    </configIni>
 
    <launcherArgs>
+<<<<<<< master
       <programArgs>--launcher.defaultAction openFile  --launcher.appendVmargs
       </programArgs>
       <vmArgs>-Dosgi.requiredJavaVersion=1.8 -Xms256m -Xmx1024m
       </vmArgs>
       <vmArgsMac>-Xdock:icon=../Resources/Eclipse.icns -XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>
+=======
+      <programArgs>--launcher.defaultAction openFile  --launcher.appendVmargs</programArgs>
+      <vmArgs>-Dosgi.requiredJavaVersion=1.8 -Xms256m -Xmx1024m --add-modules=ALL-SYSTEM --permit-illegal-access</vmArgs>
+      <vmArgsMac>-Xdock:icon=../Resources/Eclipse.icns -XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+>>>>>>> 9f6977c Bug 517482: Remove Java 9 VM arguments --add-modules and --permit-illegal-access added to eclipse.ini in Oxygen M7
    </launcherArgs>
 
    <splash
