@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.eclipse.jdt_3.14.0.qualifier.jar" id="org.eclipse.jdt" version="3.14.0.qualifier">
+      <category name="org.eclipse.jdt.feature.update"/>
+   </feature>
+   <category-def name="org.eclipse.jdt.feature.update" label="Beta Java 9 Update Site"/>
+   <repository-reference location="http://download.eclipse.org/tools/orbit/downloads/drops/S20170912163609/repository/" enabled="true" />
+</site>

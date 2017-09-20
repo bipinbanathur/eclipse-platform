@@ -18,13 +18,13 @@
   <parent>
     <groupId>org.eclipse</groupId>
     <artifactId>eclipse-platform-parent</artifactId>
-    <version>4.7.0-SNAPSHOT</version>
+    <version>4.8.0-SNAPSHOT</version>
     <relativePath>../../eclipse-platform-parent</relativePath>
   </parent>
 
   <groupId>eclipse.platform.releng</groupId>
   <artifactId>eclipse.platform.releng.java9patch47</artifactId>
-  <version>4.7.0-SNAPSHOT</version>
+  <version>4.8.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
@@ -34,19 +34,33 @@
   <modules>
     <module>../../eclipse-platform-parent</module>
     <module>../../eclipse.platform.releng.prereqs.sdk</module>
-    <module>org.eclipse.jdt.dummy</module>
-    <module>org.eclipse.jdt-feature-dummy</module>
+    <module>../../eclipse.platform.common/bundles/org.eclipse.jdt.doc.user</module>
+    <module>../../eclipse.platform/ant/org.eclipse.ant.ui</module>
     <module>../../eclipse.jdt.core/org.eclipse.jdt.apt.core</module>
+    <module>../../eclipse.jdt.core/org.eclipse.jdt.apt.ui</module>
+    <module>../../eclipse.jdt.core/org.eclipse.jdt.apt.pluggable.core</module>
+    <module>../../eclipse.platform/ant/org.eclipse.ant.launching</module>
     <module>../../eclipse.jdt.core/org.eclipse.jdt.compiler.apt</module>
     <module>../../eclipse.jdt.core/org.eclipse.jdt.compiler.tool</module>
+    <module>../../eclipse.jdt.core/org.eclipse.jdt.annotation</module>
+    <module>../../eclipse.jdt.core/org.eclipse.jdt.annotation_v1</module>
     <module>../../eclipse.jdt.core/org.eclipse.jdt.core</module>
     <module>../../eclipse.jdt.debug/org.eclipse.jdt.launching</module>
+    <module>../../eclipse.jdt.debug/org.eclipse.jdt.launching.macosx</module>
+    <module>../../eclipse.jdt.debug/org.eclipse.jdt.launching.ui.macosx</module>
     <module>../../eclipse.jdt.debug/org.eclipse.jdt.debug</module>
     <module>../../eclipse.jdt.debug/org.eclipse.jdt.debug.ui</module>
     <module>../../eclipse.jdt.ui/org.eclipse.jdt.core.manipulation</module>
     <module>../../eclipse.jdt.ui/org.eclipse.jdt.ui</module>
+    <module>../../eclipse.jdt.ui/org.eclipse.jdt.junit</module>
+    <module>../../eclipse.jdt.ui/org.eclipse.jdt.junit.core</module>
+    <module>../../eclipse.jdt.ui/org.eclipse.jdt.junit.runtime</module>
+    <module>../../eclipse.jdt.ui/org.eclipse.jdt.junit4.runtime</module>
+    <module>../../eclipse.jdt.ui/org.eclipse.jdt.junit5.runtime</module>
+    
+    <module>../../eclipse.jdt/org.eclipse.jdt</module>
+    <module>../../eclipse.jdt/org.eclipse.jdt-feature</module>
     <module>../../eclipse.platform.debug/org.eclipse.debug.ui</module>
-    <module>org.eclipse.jdt.java9patch</module>
-    <module>eclipse.releng.repository.java9patch</module>
+    <module>org.eclipse.jdt.feature.update</module>
   </modules>
 </project>

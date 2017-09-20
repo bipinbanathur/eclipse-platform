@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>eclipse.platform.releng</groupId>
+    <artifactId>eclipse.platform.releng.java9patch47</artifactId>
+    <version>4.8.0-SNAPSHOT</version>
+    <relativePath>../</relativePath>
+  </parent>
+  <groupId>org.eclipse.jdt.feature.update</groupId>
+  <artifactId>org.eclipse.jdt.feature.update</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>eclipse-repository</packaging>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-p2-publisher-plugin</artifactId>
+        <version>${tycho.version}</version>
+        <executions>
+          <execution>
+            <id>categories-java9patch</id>
+            <phase>package</phase>
+            <goals>
+              <goal>publish-categories</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-p2-repository-plugin</artifactId>
+        <version>${tycho.version}</version>
+        <configuration>
+          <includeAllDependencies>false</includeAllDependencies>
+        </configuration>
+        <executions>
+          <execution>
+            <id>assemble-java9patch</id>
+            <phase>package</phase>
+            <configuration>
+              <repositoryName>Early Access of Java 9 support</repositoryName>
+              <finalName>Java9EarlyAccessPatchRepo</finalName>
+            </configuration>
+            <goals>
+              <goal>assemble-repository</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>archive-java9patch</id>
+            <phase>pre-integration-test</phase>
+            <configuration>
+              <repositoryName>Early Access of Java 9 support</repositoryName>
+              <finalName>Java9EarlyAccessPatchRepo</finalName>
+            </configuration>
+            <goals>
+              <goal>archive-repository</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+    </plugins>
+  </build>
+  
+</project>
