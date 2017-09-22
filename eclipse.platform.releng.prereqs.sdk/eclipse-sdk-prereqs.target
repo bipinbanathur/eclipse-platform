@@ -113,13 +113,8 @@
       <unit id="org.apache.lucene.analyzers-common.source" version="6.1.0.v20161115-1612"/>
       <unit id="org.apache.lucene.misc.source" version="6.1.0.v20161115-1612"/>
       
-
-      <repository location="http://download.eclipse.org/tools/orbit/R-builds/R20170516192513/repository/"/>
-    </location>
-
-    <location includeAllPlatforms="true" includeMode="slicer" type="InstallableUnit">
-
-      <unit id="org.junit.jupiter.api" version="5.0.0.v20170910-2246"/>
+	  <!-- JUnit 5-->
+	  <unit id="org.junit.jupiter.api" version="5.0.0.v20170910-2246"/>
       <unit id="org.junit.jupiter.api.source" version="5.0.0.v20170910-2246"/>
 
       <unit id="org.junit.jupiter.engine" version="5.0.0.v20170910-2246"/>
@@ -155,7 +150,7 @@
       <unit id="org.apiguardian" version="1.0.0.v20170910-2246"/>
       <unit id="org.apiguardian.source" version="1.0.0.v20170910-2246"/>
 
-      <repository location="http://download.eclipse.org/tools/orbit/S-builds/S20170912163609/repository/"/>
+	  <repository location="http://download.eclipse.org/tools/orbit/M-builds/M20170919201930/repository/"/>
     </location>
 
     <location includeAllPlatforms="true" includeMode="slicer" type="InstallableUnit">
