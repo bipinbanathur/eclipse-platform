@@ -1703,7 +1703,13 @@
     depends="init">
     <runTests testPlugin="org.eclipse.pde.ui.tests" />
   </target>
-	
+
+  <target
+	name="pdeuitemplates"
+	depends="init">
+	<runTests testPlugin="org.eclipse.pde.ui.templates.tests" />
+  </target>
+
   <target
 	name="pdegenericeditor"
 	depends="init">
@@ -2148,6 +2154,7 @@
     depends="init">
     <antcall target="pdeds" />
     <antcall target="pdeui" />
+    <antcall target="pdeuitemplates" />
   </target>
 
   <target
