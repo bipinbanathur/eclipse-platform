@@ -246,6 +246,7 @@
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>target-platform-configuration</artifactId>
         <configuration>
+          <executionEnvironment>JavaSE-9</executionEnvironment>
           <!-- https://bugs.eclipse.org/bugs/show_bug.cgi?id=453757
             <resolveWithExecutionEnvironmentConstraints>false</resolveWithExecutionEnvironmentConstraints>
           -->
