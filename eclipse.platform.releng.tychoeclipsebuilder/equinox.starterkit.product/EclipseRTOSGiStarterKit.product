@@ -11,6 +11,8 @@
       </programArgs>
       <vmArgs>-Declipse.ignoreApp=true
       </vmArgs>
+      <vmArgsLin>-Dswt.dbus.init
+      </vmArgsLin>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>
    </launcherArgs>
