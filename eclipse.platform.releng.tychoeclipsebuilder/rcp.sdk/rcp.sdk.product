@@ -11,6 +11,8 @@
       </programArgs>
       <vmArgs>-Xms40m -Xmx384m
       </vmArgs>
+      <vmArgsLin>-Dswt.dbus.init
+      </vmArgsLin>
       <vmArgsMac>-Xdock:icon=../Resources/Eclipse.icns -XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>
    </launcherArgs>
