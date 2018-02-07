@@ -6,7 +6,7 @@
   <includeBaseDirectory>false</includeBaseDirectory>
   <fileSets>
     <fileSet>
-      <directory>${project.basedir}/src/main/scripts</directory>
+      <directory>${project.basedir}/../../production/testScripts/configuration/sdk.tests/testScripts</directory>
       <outputDirectory>/eclipse-testing</outputDirectory>
     </fileSet>
     <fileSet>
