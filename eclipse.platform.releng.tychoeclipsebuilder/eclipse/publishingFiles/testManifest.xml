@@ -28,7 +28,7 @@
         fileName="eclipse-SDK-${BUILD_ID}-linux-gtk-ppc64le.tar.gz"></platform>
       <platform
         id="SMCC64"
-        name="Mac OSX (Java 64 bit version for Power PC)"
+        name="Mac OSX (Java 64 bit version)"
         fileName="eclipse-SDK-${BUILD_ID}-macosx-cocoa-x86_64.dmg"></platform>
       <platform
         id="SST"
