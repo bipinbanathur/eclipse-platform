@@ -1,0 +1,7 @@
+Verified+1: CI Bot
+Code-Review+2: Mickael Istria <mistria@redhat.com>
+Submitted-by: Mickael Istria <mistria@redhat.com>
+Submitted-at: Wed, 02 May 2018 05:50:52 -0400
+Reviewed-on: https://git.eclipse.org/r/121937
+Project: platform/eclipse.platform.releng.aggregator
+Branch: refs/heads/master
