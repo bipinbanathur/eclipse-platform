@@ -42,14 +42,6 @@
     <buildType>I</buildType>
     <buildId>${buildType}${buildTimestamp}</buildId>
     <!--
-      releaseName should match the yearly "release train" name.
-      For example, "Mars", "Mars.1", "Luna SR2", etc.
-      It will show up in "about box",
-      such as Version: Mars (4.5), for main features.
-      See bug 328139.
-    -->
-    <releaseName>Photon</releaseName>
-    <!--
       The releaseNumbers below, for SDK and Platform, might be
       thought of as the "marketing number" or "branding number",
       and in fact are used in the branding bundle of the corresponding products.
@@ -88,9 +80,9 @@
       'eclipiserun-repo' repository, such as for computing .api-descriptions and
       generating API Tools reports.
     -->
-    <eclipserun-repo>http://download.eclipse.org/eclipse/updates/4.8-I-builds/</eclipserun-repo>
+    <eclipserun-repo>http://download.eclipse.org/eclipse/updates/4.9-I-builds/</eclipserun-repo>
     
-    <comparator.repo>http://download.eclipse.org/eclipse/updates/4.8-I-builds</comparator.repo>
+    <comparator.repo>http://download.eclipse.org/eclipse/updates/4.9-I-builds</comparator.repo>
 
     <!--
       NOTE: this EMF and ECF URL must match exactly what is in the eclipse-sdk-prereqs.target file.
@@ -397,8 +389,9 @@
            <configuration>
              <skip>${compare-version-with-baselines.skip}</skip>
              <baselines>
-               <baseline>http://download.eclipse.org/eclipse/updates/4.7-M-builds/</baseline> <!-- upcoming maintenance build of previous release -->
-               <baseline>http://download.eclipse.org/eclipse/updates/4.8/</baseline> <!-- Next release (useful after 4.8 is released to compare upcoming 4.8 maitenance with last 4.8 release) -->
+               <baseline>http://download.eclipse.org/eclipse/updates/4.8-I-builds/</baseline> <!-- upcoming maintenance build of previous release -->
+               <baseline>http://download.eclipse.org/eclipse/updates/4.8/</baseline> <!-- Current release -->
+               <baseline>http://download.eclipse.org/eclipse/updates/4.9/</baseline> <!-- Next release (useful after 4.9 is released to compare last 4.8 release) -->
              </baselines>
              <comparator>zip</comparator>
            </configuration>
@@ -659,7 +652,7 @@
           For maintenance streams should always be "M-builds".
           Ideally, this value would be provided by the environment, see bug 489789.
         -->
-        <eclipse-p2-repo.url>http://download.eclipse.org/eclipse/updates/4.8-I-builds</eclipse-p2-repo.url>
+        <eclipse-p2-repo.url>http://download.eclipse.org/eclipse/updates/4.9-I-builds</eclipse-p2-repo.url>
       </properties>
       <repositories>
         <repository>

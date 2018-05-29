@@ -61,45 +61,14 @@ function latestSimpleRepo
   echo ${latestDLrepoSegment}
 }
 
-if [[ ${build_type} == "N" ]]
+if [[ ${build_type} == "I" ]]
 then
-  update_dir_segment="4.8-N-builds"
-  # Note: I am not sure all N-build comparisons are meaninful.
-  #       we may want a way to "skip" those comparisons.
-  latest_M_build=$(latestSimpleRepo "${repo_root}/4.7-M-builds" "M20*")
-  RC=$?
-  if [[ $RC != 0 ]]
-  then
-    exit $RC
-  fi
-  echo -e "\tlatest_M_build: $latest_M_build"
-  buildIdToCompare="4.7-M-builds/${latest_M_build}"
-elif [[ ${build_type} == "M" ]]
-then
-  update_dir_segment="4.7-M-builds"
-  buildIdToCompare="4.7/R-4.7.3a-201803300640"
-  echo -e "\tlatest_R_build: R-4.7.3a-201803300640"
-elif [[ ${build_type} == "I" ]]
-then
-  update_dir_segment="4.8-I-builds"
+  update_dir_segment="4.9-I-builds"
   buildIdToCompare="4.7/R-4.7.3a-201803300640"
   echo -e "\tlatest_R_build: R-4.7.3a-201803300640"
 elif [[ ${build_type} == "Y" ]]
 then
-  update_dir_segment="4.8-Y-builds"
-  # Note: we use same value for Y-builds as for I-builds, since conceptually
-  # they are the same, except that Y-builds use some code from BETA_JAVA9 branch.
-  latest_M_build=$(latestSimpleRepo "${repo_root}/4.7-M-builds" "M20*")
-  RC=$?
-  if [[ $RC != 0 ]]
-  then
-    exit $RC
-  fi
-  echo -e "\tlatest_M_build: $latest_M_build"
-  buildIdToCompare="4.7-M-builds/${latest_M_build}"
-elif [[ ${build_type} == "U" ]]
-then
-  update_dir_segment="4.7-U-builds"
+  update_dir_segment="4.9-Y-builds"
   # Note: we use same value for Y-builds as for I-builds, since conceptually
   # they are the same, except that Y-builds use some code from BETA_JAVA9 branch.
   latest_M_build=$(latestSimpleRepo "${repo_root}/4.7-M-builds" "M20*")
