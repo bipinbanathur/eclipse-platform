@@ -45,7 +45,7 @@ fi
 
 EBUILDER=eclipse.platform.releng.aggregator
 # derived values
-gitCache=$( fn-git-cache "$BUILD_ROOT")
+gitCache=$( fn-git-cache "$WORKSPACE")
 aggDir=$( fn-git-dir "$gitCache" "$AGGREGATOR_REPO" )
 
 RC=0

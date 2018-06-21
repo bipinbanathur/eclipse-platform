@@ -31,7 +31,7 @@ source $SCRIPT_PATH/build-functions.shsource
 cd $BUILD_ROOT
 
 # derived values
-gitCache=$( fn-git-cache "$BUILD_ROOT" )
+gitCache=$( fn-git-cache "$WORKSPACE" )
 aggDir=$( fn-git-dir "$gitCache" "$AGGREGATOR_REPO" )
 repositories=$( echo $STREAMS_PATH/repositories_${PATCH_OR_BRANCH_LABEL}.txt )
 

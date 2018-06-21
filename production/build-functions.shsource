@@ -214,7 +214,7 @@ fn-local-repo ()
 }
 
 # USAGE: fn-git-clone-aggregator GIT_CACHE URL BRANCH
-#   GIT_CACHE: /shared/eclipse/builds/R4_2_maintenance/gitCache
+#   GIT_CACHE: $WORKSPACE/gitCache
 #   URL: file:///gitroot/platform/eclipse.platform.releng.aggregator.git
 #   BRANCH: R4_2_maintenance
 fn-git-clone-aggregator ()
@@ -236,7 +236,7 @@ fn-git-clone-aggregator ()
 }
 
 # USAGE: fn-git-clean-aggregator AGGREGATOR_DIR BRANCH
-#   AGGREGATOR_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   AGGREGATOR_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BRANCH: R4_2_maintenance
 fn-git-clean-aggregator ()
 {
@@ -277,7 +277,7 @@ fn-git-clean-aggregator ()
 }
 
 # USAGE: fn-git-clean-aggregator AGGREGATOR_DIR BRANCH
-#   AGGREGATOR_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   AGGREGATOR_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BRANCH: R4_2_maintenance
 fn-git-clean-aggregator2 ()
 {
@@ -335,7 +335,7 @@ fn-basebuilder-dir ()
 
 # USAGE: fn-maven-build-aggregator BUILD_ID REPO_DIR LOCAL_REPO DEBUG QUIET SIGNING MAVEN_BREE
 #   BUILD_ID: I20121116-0700
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   LOCAL_REPO: /shared/eclipse/builds/R4_2_maintenance/localMavenRepo
 #   VERBOSE: true
 #   SIGNING: true
@@ -439,7 +439,7 @@ fn-maven-build-aggregator ()
 
 # USAGE: fn-submodule-checkout BUILD_ID REPO_DIR REPOSITORIES_TXT
 #   BUILD_ID: M20121116-1100
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   SCRIPT: /shared/eclipse/builds/scripts/git-submodule-checkout.sh
 #   REPOSITORIES_TXT: /shared/eclipse/builds/streams/repositories.txt
 fn-submodule-checkout ()
@@ -471,7 +471,7 @@ fn-submodule-checkout ()
 }
 
 # USAGE: fn-add-submodule-updates REPO_DIR
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 fn-add-submodule-updates ()
 {
   checkNArgs $# 1
@@ -490,7 +490,7 @@ fn-add-submodule-updates ()
 
 # USAGE: fn-tag-build-inputs BUILD_ID REPO_DIR REPOSITORIES_TXT
 #   BUILD_ID: M20121116-1100
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   REPOSITORIES_TXT: /shared/eclipse/builds/streams/repositories.txt
 # NOTE: the use of || : at the end of git submodules foreach commands. 
 # See git submodules --help for more info ,or 
@@ -573,7 +573,7 @@ fn-tag-build-inputs ()
 }
 
 # USAGE: fn-pom-version-updater REPO_DIR LOCAL_REPO DEBUG QUIET
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   LOCAL_REPO: /shared/eclipse/builds/R4_2_maintenance/localMavenRepo
 # TODO: depends on TMP_DIR being exported/global
 fn-pom-version-updater ()
@@ -642,7 +642,7 @@ fn-pom-version-updater ()
 
 # USAGE: fn-gather-repo BUILD_ID REPO_DIR BUILD_DIR
 #   BUILD_ID: I20121116-0700
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 fn-gather-repo ()
 {
@@ -667,7 +667,7 @@ fn-gather-repo ()
 
 # USAGE: fn-gather-sdk BUILD_ID REPO_DIR BUILD_DIR
 #   BUILD_ID: I20121116-0700
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 fn-gather-sdk ()
 {
@@ -705,7 +705,7 @@ fn-gather-sdk ()
 
 # USAGE: fn-gather-platform BUILD_ID REPO_DIR BUILD_DIR
 #   BUILD_ID: I20121116-0700
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 fn-gather-platform ()
 {
@@ -734,7 +734,7 @@ fn-gather-platform ()
 
 # USAGE: fn-gather-swt-zips BUILD_ID REPO_DIR BUILD_DIR
 #   BUILD_ID: I20121116-0700
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 fn-gather-swt-zips ()
 {
@@ -758,7 +758,7 @@ fn-gather-swt-zips ()
 
 # USAGE: fn-gather-test-zips BUILD_ID REPO_DIR BUILD_DIR
 #   BUILD_ID: I20121116-0700
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 fn-gather-test-zips ()
 {
@@ -790,7 +790,7 @@ fn-gather-test-zips ()
 
 # USAGE: fn-gather-ecj-jars BUILD_ID REPO_DIR BUILD_DIR
 #   BUILD_ID: I20121116-0700
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 fn-gather-ecj-jars ()
 {
@@ -817,7 +817,7 @@ fn-gather-ecj-jars ()
 
 # USAGE: fn-slice-repos BUILD_ID REPO_DIR BUILD_DIR BASEBUILDER_LAUNCHER
 #   BUILD_ID: I20121116-0700
-#   ANT_SCRIPT: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   ANT_SCRIPT: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 #   BASEBUILDER_LAUNCHER: /shared/eclipse/builds/R4_2_maintenance/org.eclipse.releng.basebuilder_R3_7/plugins/org.eclipse.equinox.launcher_1.2.0.v20110502.jar
 fn-slice-repos ()
@@ -863,7 +863,7 @@ fn-slice-repos ()
 
 # USAGE: fn-gather-repo-zips BUILD_ID REPO_DIR BUILD_DIR
 #   BUILD_ID: I20121116-0700
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 fn-gather-repo-zips ()
 {
@@ -890,7 +890,7 @@ fn-gather-repo-zips ()
 # by fn-gather-23-compile-log as long as we are on Tycho 23 or above.
 # USAGE: fn-gather-compile-logs BUILD_ID REPO_DIR BUILD_DIR
 #   BUILD_ID: I20121116-0700
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 fn-gather-compile-logs ()
 {
@@ -935,7 +935,7 @@ fn-gather-compile-logs ()
 # This method for use when using Tycho 0.23.0 or greater, due to
 # fix for multi-jar bundles.
 #   BUILD_ID: I20121116-0700
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 fn-gather-23-compile-logs ()
 {
@@ -984,7 +984,7 @@ fn-gather-23-compile-logs ()
 }
 #   fn-gather-buildnotes
 #   BUILD_ID: I20121116-0700
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 function fn-gather-buildnotes
 {
@@ -1008,7 +1008,7 @@ function fn-gather-buildnotes
 }
 #   fn-gather-artifactcomparisons
 #   BUILD_ID: I20121116-0700
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 # TODO: this may take a while, for something that usually won't be found.
 # could skip for N-builds. Plus, could check if size of log was greater than minimum.
@@ -1037,7 +1037,7 @@ function fn-gather-artifactcomparisons
 
 # USAGE: fn-gather-main-index BUILD_ID REPO_DIR BUILD_DIR STREAM BUILD_TYPE BUILD_PRETTY_DATE
 #   BUILD_ID: I20121116-0700
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 #   STREAM: 4.2.2
 #   BUILD_TYPE: M, I, N, X, Y, P, U
@@ -1062,7 +1062,7 @@ fn-gather-main-index ()
 
 # USAGE: fn-parse-compile-logs BUILD_ID ANT_SCRIPT BUILD_DIR BASEBUILDER_LAUNCHER
 #   BUILD_ID: I20121116-0700
-#   ANT_SCRIPT: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   ANT_SCRIPT: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 #   BASEBUILDER_LAUNCHER: /shared/eclipse/builds/R4_2_maintenance/org.eclipse.releng.basebuilder_R3_7/plugins/org.eclipse.equinox.launcher_1.2.0.v20110502.jar
 fn-parse-compile-logs ()
@@ -1091,7 +1091,7 @@ fn-parse-compile-logs ()
 
 # USAGE: fn-summarize-comparator-logs BUILD_ID ANT_SCRIPT BUILD_DIR BASEBUILDER_LAUNCHER
 #   BUILD_ID: I20121116-0700
-#   ANT_SCRIPT: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   ANT_SCRIPT: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 #   BASEBUILDER_LAUNCHER: /shared/eclipse/builds/R4_2_maintenance/org.eclipse.releng.basebuilder_R3_7/plugins/org.eclipse.equinox.launcher_1.2.0.v20110502.jar
 #   TODO: I think this could be pure ant task
@@ -1119,7 +1119,7 @@ fn-summarize-comparator-logs ()
 }
 # USAGE: fn-summarize-apitooling BUILD_ID ANT_SCRIPT BUILD_DIR BASEBUILDER_LAUNCHER
 #   BUILD_ID: I20121116-0700
-#   ANT_SCRIPT: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   ANT_SCRIPT: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 #   BASEBUILDER_LAUNCHER: /shared/eclipse/builds/R4_2_maintenance/org.eclipse.releng.basebuilder_R3_7/plugins/org.eclipse.equinox.launcher_1.2.0.v20110502.jar
 #   TODO: could avoid some of the hard coding of "previous version" and URL
@@ -1157,7 +1157,7 @@ fn-summarize-apitooling ()
     -DEBuilderDir=$EBuilderDir \
     -DbuildId="$BUILD_ID" \
     -DbuildLabel="$BUILD_ID" \
-    -DbuildWorkingArea="${BUILD_HOME}/4${BUILD_TYPE}/gitCache/eclipse.platform.releng.aggregator" \
+    -DbuildWorkingArea="${WORKSPACE}/gitCache/eclipse.platform.releng.aggregator" \
     -DpreviousBaseURL=http://${DOWNLOAD_HOST}/eclipse/downloads/drops4/S-4.8RC2-201805240900/eclipse-SDK-4.8RC2-win32.zip \
     -DpreviousBaselineName=Eclipse-SDK-4.8RC2 \
     -DpreviousBaselineFilename=eclipse-SDK-4.8RC2-win32.zip \
@@ -1171,7 +1171,7 @@ fn-summarize-apitooling ()
 #   BUILD_TYPE: I
 #   BUILD_STREAM: 4.2.2
 #   BUILD_ID: I20121116-0700
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 #   BASEBUILDER_LAUNCHER: /shared/eclipse/builds/R4_2_maintenance/org.eclipse.releng.basebuilder_R3_7/plugins/org.eclipse.equinox.launcher_1.2.0.v20110502.jar
 fn-publish-eclipse ()
@@ -1265,7 +1265,7 @@ fn-basebuilder-launcher ()
 
 # USAGE: fn-pom-version-report BUILD_ID REPO_DIR BUILD_DIR LOCAL_REPO
 #   BUILD_ID: I20121116-0700
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 fn-pom-version-report ()
 {

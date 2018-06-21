@@ -31,7 +31,7 @@ source $SCRIPT_PATH/build-functions.shsource
 cd $BUILD_ROOT
 
 # derived values
-gitCache=$( fn-git-cache "$BUILD_ROOT" )
+gitCache=$( fn-git-cache "$WORKSPACE" )
 aggDir=$( fn-git-dir "$gitCache" "$AGGREGATOR_REPO" )
 
 if [ -z "$BUILD_ID" ]; then

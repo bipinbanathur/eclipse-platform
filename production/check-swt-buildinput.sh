@@ -23,7 +23,7 @@ fi
 
 source "$1"
 
-pushd $BUILD_ROOT/gitCache/eclipse.platform.releng.aggregator/eclipse.platform.swt
+pushd $WORKSPACE/gitCache/eclipse.platform.releng.aggregator/eclipse.platform.swt
 commit=$(git log --pretty=oneline -1|cut -d' ' -f2-)
 popd
 

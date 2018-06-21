@@ -31,7 +31,7 @@ fi
 NERRORS=0
 # products means, sdk.ide (aka SDK), rcp.id, rcp.sdk.id, platform.ide (aka platform binary), platform.sdk
 NPRODUCTS=5
-AGGR_DIR="${BUILD_HOME}/${BUILD_MAJOR_VERSION}${BUILD_TYPE}/gitCache/eclipse.platform.releng.aggregator"
+AGGR_DIR="${WORKSPACE}/gitCache/eclipse.platform.releng.aggregator"
 ECLIPSE_BUILD_DIR="${AGGR_DIR}/eclipse.platform.releng.tychoeclipsebuilder"
 
 declare -a PLATFORMS=( \

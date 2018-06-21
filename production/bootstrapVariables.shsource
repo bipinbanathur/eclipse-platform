@@ -43,8 +43,13 @@ else
 fi
 source "${SCRIPT_PATH}/bashUtilities.shsource"
 
-# USAGE: fn-git-cache BUILD_ROOT
+
+# OLD USAGE: fn-git-cache ROOT
 #   ROOT: /shared/eclipse/builds/${major}${type}
+#
+# Bug 535499 - Move gitCache to Jenkins workspace
+# NEW USAGE: fn-git-cache ROOT
+#   ROOT: $WORKSPACE (Jenkins workspace)
 fn-git-cache ()
 {
   # we (now) leave branch our of git-cache path, or else "topic branches", such as
@@ -54,8 +59,15 @@ fn-git-cache ()
   ROOT="$1"; shift
   echo $ROOT/gitCache
 }
-# USAGE: fn-git-dir GIT_CACHE URL
-#   GIT_CACHE: /shared/eclipse/builds/R4_2_maintenance/gitCache
+
+
+# OLD USAGE: fn-git-dir GIT_CACHE URL
+#   GIT_CACHE: $WORKSPACE/gitCache
+#   URL: file:///gitroot/platform/eclipse.platform.releng.aggregator.git
+#
+# Bug 535499 - Move gitCache to Jenkins workspace
+# NEW USAGE: fn-git-dir GIT_CACHE URL
+#   GIT_CACHE: $WORKSPACE/gitCache
 #   URL: file:///gitroot/platform/eclipse.platform.releng.aggregator.git
 fn-git-dir ()
 {
@@ -69,7 +81,6 @@ fn-git-dir ()
 
 # USAGE: fn-build-id BUILD_TYPE
 #   BUILD_TYPE: I, M, N, X, Y, P, U
-
 fn-build-id ()
 {
   checkNArgs $# 1
@@ -119,7 +130,7 @@ fn-build-dir ()
 
   if [[ -z "${gitCache}" ]]
   then
-    gitCache=$( fn-git-cache "${BUILD_ROOT}" )
+    gitCache=$( fn-git-cache "${WORKSPACE}" )
     assertNotEmpty gitCache
     export gitCache
   else

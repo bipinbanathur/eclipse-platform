@@ -42,7 +42,7 @@ rm -vfr "${buildDirectory}"/eclipse.platform.releng.aggregator*.zip
 # location?
 
 # In some (most) cases may have to do a "git pull" on aggregator, to get a fix (but not recursively!)
-pushd "${BUILD_ROOT}/${BUILD_MAJOR}${BUILD_TYPE}/gitCache/eclipse.platform.releng.aggregator" 1>&2
+pushd "${WORKSPACE}/gitCache/eclipse.platform.releng.aggregator" 1>&2
 git pull
 newHASH=$(git rev-parse HEAD)
 echo "newHASH (after pull): $newHASH" 1>&2

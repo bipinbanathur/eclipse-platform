@@ -37,7 +37,7 @@ function findEclipseExe ()
     echo -e "\t${baseBuilderDir}" >>${TRACE_LOG}
     echo -e "\tdid not exist as expected. Will re-create.\n" >>${TRACE_LOG}
 
-    EBuilder="${BUILD_ROOT}/gitCache/eclipse.platform.releng.aggregator/eclipse.platform.releng.tychoeclipsebuilder"
+    EBuilder="${WORKSPACE}/gitCache/eclipse.platform.releng.aggregator/eclipse.platform.releng.tychoeclipsebuilder"
     # make sure that build repo still exists
     if [[ ! -d ${EBuilder} ]]
     then

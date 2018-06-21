@@ -18,7 +18,7 @@
 
 echo "#!/usr/bin/env bash" > ${CL_SITE}/deferredTag.sh
 echo "# navigate to gitcache aggregator" >> ${CL_SITE}/deferredTag.sh
-echo "pushd ${BUILD_ROOT}/${AGGR_LOCATION}" >> ${CL_SITE}/deferredTag.sh
+echo "pushd ${WORKSPACE}/${AGGR_LOCATION}" >> ${CL_SITE}/deferredTag.sh
 echo "" >> ${CL_SITE}/deferredTag.sh
 echo "# DROP_ID == BUILD_ID, which should already exist as tag (for all I and M builds)" >> ${CL_SITE}/deferredTag.sh
 echo "git submodule foreach git tag -a -m \"${NEW_ANNOTATION}\" ${NEW_TAG} ${DROP_ID}" >> ${CL_SITE}/deferredTag.sh

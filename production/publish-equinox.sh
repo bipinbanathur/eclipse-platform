@@ -54,7 +54,7 @@ fn-eq-build-dir ()
 
 # USAGE: fn-eq-gather-starterkit BUILD_ID REPO_DIR BUILD_DIR
 #   BUILD_ID: I20121116-0700
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 fn-eq-gather-starterkit ()
 {
@@ -105,7 +105,7 @@ fn-eq-gather-starterkit ()
 #   BUILD_TYPE: I
 #   BUILD_STREAM: 4.2.2
 #   BUILD_ID: I20121116-0700
-#   REPO_DIR: /shared/eclipse/builds/R4_2_maintenance/gitCache/eclipse.platform.releng.aggregator
+#   REPO_DIR: $WORKSPACE/gitCache/eclipse.platform.releng.aggregator
 #   BUILD_DIR: /shared/eclipse/builds/R4_2_maintenance/dirs/M20121120-1747
 #   BASEBUILDER_LAUNCHER: /shared/eclipse/builds/R4_2_maintenance/org.eclipse.releng.basebuilder_R3_7/plugins/org.eclipse.equinox.launcher_1.2.0.v20110502.jar
 fn-publish-equinox ()
@@ -178,7 +178,7 @@ fn-publish-equinox ()
 cd $BUILD_ROOT
 
 # derived values
-gitCache=$( fn-git-cache "$BUILD_ROOT")
+gitCache=$( fn-git-cache "$WORKSPACE")
 aggDir=$( fn-git-dir "$gitCache" "$AGGREGATOR_REPO" )
 
 if [ -z "$BUILD_ID" ]; then
