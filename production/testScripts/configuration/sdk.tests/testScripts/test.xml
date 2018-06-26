@@ -2104,6 +2104,12 @@
   </target>
 
   <target
+    name="uipluginchecks"
+    depends="init">
+    <runTests testPlugin="org.eclipse.ui.tests.pluginchecks" />
+  </target>
+
+  <target
     name="all"
     depends="init">
     <!--
