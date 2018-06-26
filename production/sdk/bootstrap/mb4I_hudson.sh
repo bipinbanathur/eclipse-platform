@@ -54,15 +54,13 @@ echo "locale charmap: $(locale charmap)"
 
 # all optional
 # normally, when ran from crobjob, none should be specified
-while getopts 'hti' OPTION
+while getopts 'ht' OPTION
 do
   case $OPTION in
     h)    usage
       exit
       ;;
     t)    export testbuildonly=true
-      ;;
-    i)    export invisibleBuild=true
       ;;
   esac
 done
