@@ -1,0 +1,4 @@
+eclipse.jdt.core: BETA_JAVA_11
+eclipse.jdt.debug: BETA_JAVA_11
+eclipse.jdt.ui: BETA_JAVA_11
+eclipse.pde.ui: BETA_JAVA_11
