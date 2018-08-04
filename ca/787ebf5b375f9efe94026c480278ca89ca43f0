@@ -1,0 +1,7 @@
+Verified+1: CI Bot
+Code-Review+2: Alexander Kurtakov <akurtako@redhat.com>
+Submitted-by: Alexander Kurtakov <akurtako@redhat.com>
+Submitted-at: Sat, 04 Aug 2018 08:00:32 -0400
+Reviewed-on: https://git.eclipse.org/r/127056
+Project: platform/eclipse.platform.releng.aggregator
+Branch: refs/heads/master
