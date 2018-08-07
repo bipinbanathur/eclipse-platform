@@ -52,6 +52,22 @@
           </dependency-resolution>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>target-platform-configuration</artifactId>
+        <configuration>
+          <dependency-resolution>
+            <extraRequirements>
+             <!-- this guarantees proper inclusion in reactor-->
+              <requirement>
+                <type>eclipse-feature</type>
+                <id>${featureToPatchPDE}</id>
+                <versionRange>${featureToPatchVersionPDE}</versionRange>
+              </requirement>
+            </extraRequirements>
+          </dependency-resolution>
+        </configuration>
+      </plugin>
 
       <plugin>
         <artifactId>maven-antrun-plugin</artifactId>
