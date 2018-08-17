@@ -106,7 +106,7 @@
       <unit id="org.apache.commons.io" version="2.2.0.v201405211200" />
       <unit id="org.apache.commons.io.source" version="2.2.0.v201405211200" />
 
-      <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository" />
+      <repository location="http://download.eclipse.org/tools/orbit/R-builds/R20170307180635/repository/" />
     </location>
 
     <location includeAllPlatforms="true" includeMode="slicer" type="InstallableUnit">
