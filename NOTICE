@@ -1,0 +1,854 @@
+# Notices for Eclipse Platform
+
+This content is produced and maintained by the Eclipse Platform project.
+
+* Project home: https://projects.eclipse.org/projects/eclipse.platform
+
+## Trademarks
+
+Eclipse Platform is a trademark of the Eclipse Foundation.
+
+## Copyright
+
+All content is the property of the respective authors or their employers. For
+more information regarding authorship of content, please consult the listed
+source code repository logs.
+
+## Declared Project Licenses
+
+This program and the accompanying materials are made available under the terms
+of the Eclipse Public License v. 2.0 which is available at
+http://www.eclipse.org/legal/epl-v20.html.
+
+SPDX-License-Identifier: EPL-2.0
+
+## Source Code
+
+The project maintains the following source code repositories:
+
+* http://git.eclipse.org/c/platform/eclipse.platform.common.git
+* http://git.eclipse.org/c/platform/eclipse.platform.debug.git
+* http://git.eclipse.org/c/platform/eclipse.platform.git
+* http://git.eclipse.org/c/platform/eclipse.platform.releng.eclipsebuilder.git
+* http://git.eclipse.org/c/platform/eclipse.platform.releng.git
+* http://git.eclipse.org/c/platform/eclipse.platform.resources.git
+* http://git.eclipse.org/c/platform/eclipse.platform.runtime.git
+* http://git.eclipse.org/c/platform/eclipse.platform.swt.git
+* http://git.eclipse.org/c/platform/eclipse.platform.team.git
+* http://git.eclipse.org/c/platform/eclipse.platform.text.git
+* http://git.eclipse.org/c/platform/eclipse.platform.ua.git
+* http://git.eclipse.org/c/platform/eclipse.platform.ui.git
+
+## Third-party Content
+
+This project leverages the following third party content.
+
+Apache Ant (1.7.0)
+
+* License: Apache License, 2.0
+
+Apache Ant (1.7.1)
+
+* License: Apache License, 2.0 + W3C license
+
+Apache Ant (1.8.2)
+
+* License: Apache License, 2.0
+
+apache ant (1.8.3)
+
+* License: Apache License, 2.0
+* Project: http://ant.apache.org/
+* Source: http://ant.apache.org/srcdownload.cgi
+
+Apache Ant (1.8.4)
+
+* License: Apache License, 2.0, W3C, Public Domain
+* Project: ant.apache.org
+* Source: http://ant.apache.org/srcdownload.cgi
+
+Apache Ant (1.9.4)
+
+* License: Apache License, 2.0, W3C License, Public Domain
+
+Apache Ant (1.9.6)
+
+* License: Apache License, 2.0, W3C License, Public Domain 
+
+Apache Ant (1.10.1)
+
+* License: Apache License, 2.0, W3C License, Public Domain
+* Project: ant.apache.org
+* Source: http://ant.apache.org/srcdownload.cgi
+
+Apache Ant (1.10.2)
+
+* License: Apache-2.0 AND W3C AND LicenseRef-Public-Domain
+
+Apache ant (1.10.3)
+
+* License: Apache-2.0 AND W3C AND LicenseRef-Public-Domain
+
+Apache Ant (1.10.5)
+
+* License: Apache-2.0 AND W3C AND LicenseRef-Public-Domain
+* Project: https://ant.apache.org/
+* Source: http://ant.apache.org/srcdownload.cgi
+
+Apache Ant 1.9.2 (1.9.2)
+
+* License: Apache License, 2.0, W3C License, Public Domain
+* Project: ant.apache.org
+* Source: http://ant.apache.org/srcdownload.cgi
+
+Apache Batik CSS (1.9)
+
+* License: Apache-2.0
+* Project: https://xmlgraphics.apache.org/batik/
+* Source:
+   https://svn.apache.org/repos/asf/xmlgraphics/batik/tags/batik-1_9/batik-css/
+
+Apache Batik Internationalization (1.9)
+
+* License: Apache-2.0 
+
+Apache Batik Util (1.9)
+
+* License: Apache-2.0
+
+Apache Commons JXPath (1.2)
+
+* License: Apache License, 2.0
+
+Apache Felix Gogo (0.8.0)
+
+* License: Apache License, 2.0
+
+Apache Felix Gogo Version: 0.10.0 (Command, Shell and Runtime) (0.10.0)
+
+* License: Apache License, 2.0 
+
+Apache HttpClient (3.1)
+
+* License: Apache License, 2.0
+
+Apache HttpComponents Client (4.1.3)
+
+* License: Apache License 2.0
+
+Apache HttpComponents Client (4.3.4)
+
+* License: Apache License 2.0
+* Project: http://hc.apache.org/index.html
+* Source:
+   http://apache.arvixe.com//httpcomponents/httpclient/source/httpcomponents-client-4.3.4-src.tar.gz
+
+Apache HttpComponents Client 4.3.6 (4.3.6)
+
+* License: Apache License, 2.0
+* Project: https://hc.apache.org/
+* Source:
+   https://www.apache.org/dist/httpcomponents/httpclient/source/httpcomponents-client-4.3.6-src.tar.gz
+
+Apache HttpComponents Core (4.1.4)
+
+* License: Apache License 2.0
+
+Apache HttpComponents Core (4.3.2)
+
+* License: Apache License 2.0, Public Domain
+* Project: http://hc.apache.org/index.html
+* Source:
+   http://apache.claz.org//httpcomponents/httpcore/source/httpcomponents-core-4.3.2-src.tar.gz
+
+Apache Lucene (1.9.1)
+
+* License: Apache License, 2.0
+
+Apache Lucene analyzers-common (7.0.0)
+
+* License: Apache-2.0 AND BSD-3-Clause AND BSD-2-Clause
+* Project: https://lucene.apache.org/
+* Source:
+   https://archive.apache.org/dist/lucene/java/7.0.0/lucene-7.0.0-src.tgz
+
+Apache Lucene analyzers-common (7.1.0)
+
+* License: Apache-2.0 AND BSD-3-Clause AND BSD-2-Clause
+* Project: https://lucene.apache.org/
+* Source:
+   https://archive.apache.org/dist/lucene/java/7.1.0/lucene-7.1.0-src.tgz
+
+Apache Lucene analyzers-smartcn (7.0.0)
+
+* License: Apache-2.0
+* Project: https://lucene.apache.org/
+* Source:
+   https://archive.apache.org/dist/lucene/java/7.0.0/lucene-7.0.0-src.tgz
+
+Apache Lucene analyzers-smartcn (7.1.0)
+
+* License: Apache-2.0
+* Project: https://lucene.apache.org/
+* Source:
+   https://archive.apache.org/dist/lucene/java/7.1.0/lucene-7.1.0-src.tgz
+
+Apache Lucene Core (2.9.0)
+
+* License: Apache License, 2.0, Python Software Foundation License
+* Project: http://lucene.apache.org/java/
+
+Apache Lucene Core (7.0.0)
+
+* License: Apache-2.0 AND MIT AND BSD-3-Clause
+* Project: https://lucene.apache.org/core/
+* Source:
+   https://archive.apache.org/dist/lucene/java/7.0.0/lucene-7.0.0-src.tgz
+
+Apache Lucene Core (7.1.0)
+
+* License: Apache-2.0 AND MIT AND BSD-3-Clause
+
+APT Version: 1 (n/a)
+
+* License: New BSD license
+
+AssertJ (1.7.1)
+
+* License: Apache License, 2.0
+* Project: http://joel-costigliola.github.io/assertj/assertj-news.html
+* Source: https://github.com/joel-costigliola/assertj-core
+
+atinject (Package javax.inject) (1.0)
+
+* License: Apache License, 2.0
+* Project: http://code.google.com/p/atinject/
+* Source:
+   http://code.google.com/p/atinject/source/browse/#svn/trunk/src/javax/inject
+
+Batik constants library (1.9.1)
+
+* License: Apache-2.0
+
+Batik constants library (1.10.0)
+
+* License: Apache-2.0
+* Project: https://xmlgraphics.apache.org/batik/
+* Source:
+   https://svn.apache.org/repos/asf/xmlgraphics/batik/trunk/batik-constants/
+
+Batik CSS engine library (1.7)
+
+* License: Apache License 2.0
+
+Batik CSS engine library (1.8)
+
+* License: Apache License, 2.0
+* Project: http://xmlgraphics.apache.org/batik/
+* Source:
+   http://www-eu.apache.org/dist/xmlgraphics/batik/source/batik-src-1.8.zip
+
+Batik CSS engine library (1.9.1)
+
+* License: Apache-2.0
+
+Batik CSS engine library (1.10.0)
+
+* License: Apache-2.0
+* Project: https://xmlgraphics.apache.org/batik/
+* Source: https://svn.apache.org/repos/asf/xmlgraphics/batik/trunk/
+
+Batik GUI utility library (1.8)
+
+* License: Apache License, 2.0
+* Project: http://xmlgraphics.apache.org/batik/
+* Source:
+   http://www-eu.apache.org/dist/xmlgraphics/batik/source/batik-src-1.8.zip
+
+Batik i18n library (1.9.1)
+
+* License: Apache-2.0
+
+Batik i18n library (1.10.0)
+
+* License: Apache-2.0
+* Project: https://xmlgraphics.apache.org/batik/
+* Source: https://svn.apache.org/repos/asf/xmlgraphics/batik/trunk/batik-i18n/
+
+Batik utility library (1.7)
+
+* License: Apache License 2.0
+
+Batik utility library (1.8)
+
+* License: Apache License, 2.0
+* Project: http://xmlgraphics.apache.org/batik/
+* Source:
+   http://www-eu.apache.org/dist/xmlgraphics/batik/source/batik-src-1.8.zip
+
+Batik utility library (1.9.1)
+
+* License: Apache-2.0
+
+Batik utility library (1.10.0)
+
+* License: Apache-2.0
+* Project: https://xmlgraphics.apache.org/batik/
+* Source: https://svn.apache.org/repos/asf/xmlgraphics/batik/trunk/
+
+bottom-up heapsort C++ STL: SGI Silicon Graphics Inc stl_heap.h (n/a)
+
+* License: Modified NTP License
+
+Cairo (1.0.2)
+
+* License: Mozilla Public License 1.1 (MPL), MIT Style with No Endorsement
+   Clause, Historical Permissive Notice & Disclaimer
+
+Cairo Bindings Version - Ganymede (n/a)
+
+* License: Mozilla Public License 1.1 (MPL)
+* Project: http://www.cairographics.org/
+* Source: http://www.cairographics.org/manual/
+
+Commons Codec (1.3)
+
+* License: Apache License, 2.0
+
+Commons IO (1.4)
+
+* License: Apache License, 2.0
+
+Font Awesome (4.5.0)
+
+* License: OFL-1.1 AND MIT
+
+geronimo-annotation_1.0_spec (1.1.1)
+
+* License: Apache License, 2.0
+
+Git Logomark Version: n/a (n/a)
+
+* License: Creative Commons Attribution 3.0 Unported
+
+GitHub icons Version: N (n/a)
+
+* License: Custom License
+
+GNOME Bindings Version - Ganymede (n/a)
+
+* License: GNU Library or 'Lesser' General Public License (LGPL)
+
+Google Gson (2.7)
+
+* License: Apache License, 2.0
+
+Google Roboto Fonts (0.4.3)
+
+* License: Apache License, 2.0
+* Project: https://www.google.com/fonts/specimen/Roboto
+* Source: https://github.com/choffmeister/roboto-fontface-bower
+
+Google Web Toolkit GWT 1.5: gwt-dev-linux.jar (1.5.2)
+
+* License: Apache 2.0, New BSD license, NPL 1.1, EPL 1.0
+* Project: http://code.google.com/webtoolkit/
+* Source:
+   http://google-web-toolkit.googlecode.com/files/gwt-linux-1.5.2.tar.bz2
+
+Google Web Toolkit GWT 1.5: gwt-user.jar (1.5.2)
+
+* License: Apache License, 2.0
+* Project: http://code.google.com/webtoolkit/terms.html#licenses
+* Source: http://code.google.com/webtoolkit/
+
+GTK Binding Version - Ganymede (n/a)
+
+* License: GNU Library or 'Lesser' General Public License (LGPL) 
+* Project: www.gtk.org
+* Source: www.gtk.org
+
+hamcrest-all (1.3)
+
+* License: New BSD License
+
+Historical support for Java SSH Applet + Blowfish Version - v. - see comment in
+bug (n/a)
+
+* License: Custom Permissive License
+* Project:
+   http://web.archive.org/web/20060716115310/http://www.math.ucdavis.edu/~bill/java/ssh/
+
+httpcomponent Core 4.3.3 (4.3.3)
+
+* License: Apache License, 2.0, Public Domain
+* Project: http://hc.apache.org/
+* Source:
+   https://archive.apache.org/dist/httpcomponents/httpcore/source/httpcomponents-core-4.3.3-src.zip
+
+ICU4J (3.4)
+
+* License: ICU4J License (X License, MIT Style)
+
+ICU4J (3.4.3)
+
+* License: ICU4J License (X License, MIT Style)
+
+ICU4J (3.4.5.20061213)
+
+* License: ICU4J License (X License, MIT Style)
+
+ICU4J (4.4.2)
+
+* License: MIT Style with "no endorsement" clause, Unicode license 
+
+ICU4J (4.8.1)
+
+* License: MIT Style with "no endorsement" clause, Unicode license 
+* Project: http://www.icu-project.org
+* Source: http://site.icu-project.org/download/48
+
+ICU4J (62.1)
+
+* License: ICU AND Unicode-TOU AND BSD-3-Clause AND BSD-2-Clause AND
+   License-Ref-ipadic-license AND License-Ref-Public-Domain
+* Project: http://site.icu-project.org/
+* Source: http://source.icu-project.org/repos/icu/tags/release-62-1/icu4j/
+
+icu4j (50.1.1)
+
+* License: MIT Style with "no endorsement" clause, Unicode license
+
+ICU4J (core and extended function) and ICU4J Replacement plug-in (3.6)
+
+* License: ICU4J License (X License, MIT Style)
+
+icu4j 52.1.1 (52.1.1)
+
+* License: MIT Style with "no endorsement" clause, Unicode license, BSD Style
+   License
+
+ICU4J and ICU Replacement (54.1.1)
+
+* License: MIT Style with "no endorsement" clause, Unicode license, BSD Style
+   License
+* Project: http://site.icu-project.org/
+* Source:
+   http://bugs.icu-project.org/trac/browser/icu4j/branches/maint/maint-54
+
+ICU4J and ICU Replacement (56.1)
+
+* License: MIT Style with "no endorsement" clause, Unicode license, BSD Style
+   License
+* Project: http://site.icu-project.org/
+* Source: http://download.icu-project.org/files/icu4j/56.1/icu4j-56_1-src.jar
+
+ICU4J and ICU Replacement (58.2)
+
+* License: MIT Style with "no endorsement" clause, Unicode license, BSD Style
+   License
+* Project: http://site.icu-project.org/
+* Source: http://download.icu-project.org/files/icu4j/58.2/icu4j-58_2-src.jar
+
+ICU4J and ICU4J Replacement (3.6.1)
+
+* License: ICU4J License (X License, MIT Style)
+
+ICU4J and ICU4J replacement (3.8.1)
+
+* License: MIT License with "no edorsement" clause
+* Project: www.icu-project.org
+* Source: http://www.icu-project.org/download/3.8.html#ICU4J
+
+ICU4J and ICU4J replacement (4.0.0)
+
+* License: MIT license with no endorsement clause, Unicode license
+* Project: www.icu-project.org
+* Source: http://www.icu-project.org/download/4.0.html#ICU4J
+
+ICU4J and ICU4J replacement (4.0.1)
+
+* License: MIT Style with "no endorsement" clause, Unicode license
+* Project: www.icu-project.org
+* Source: http://www.icu-project.org/download/4.0.html#ICU4J
+
+ICU4J and ICU4J replacement (4.0.1)
+
+* License: MIT license with no endorsement clause, Unicode license
+* Project: www.icu-project.org
+* Source: http://www.icu-project.org/download/4.0.html#ICU4J
+
+ICU4J and ICU4J replacement (4.2.1)
+
+* License: MIT License with "no endorsement" clause
+
+ICU4J and ICU4J replacement (4.2.1)
+
+* License: MIT License with "no endorsement" clause
+* Project: www.icu-project.org
+* Source: http://icu-project.org/download/4.2.html#ICU4J
+
+ICU4J and ICU4J replacement (4.2.1)
+
+* License: MIT License with "no endorsement" clause
+* Project: www.icu-project.org
+* Source: http://icu-project.org/download/4.2.html#ICU4J
+
+ICU4J and ICU4J replacement (4.2.1)
+
+* License: MIT License with "no endorsement" clause
+
+ICU4J and ICU4J replacement (4.4.2)
+
+* License: MIT Style with "no endorsement" clause, Unicode license 
+* Project: www.icu-project.org
+* Source: http://icu-project.org/download/4.4.html#ICU4J
+
+ICU4J and ICU4J Replacement (52.1)
+
+* License: MIT Style with "no endorsement" clause, Unicode license
+* Project: http://site.icu-project.org/home
+* Source: http://site.icu-project.org/download/52#TOC-ICU4J-Download
+
+ICU4J and ICU4J Replacement 50.1 (50.1)
+
+* License: MIT Style with "no endorsement" clause, Unicode license
+
+ICU4J Main* (3.8.1)
+
+* License: MIT License with "no endorsement" clause
+
+ICU4J Main* (4.0.1)
+
+* License: MIT Style with "no endorsement" clause, Unicode license
+
+Jacoco agent (0.4.0)
+
+* License: Eclipse Public License
+
+Jacoco agent (0.5.0)
+
+* License: Eclipse Public License
+* Project: http://www.eclemma.org/jacoco/index.html
+
+Jacoco agent.rt (0.5.0)
+
+* License: Eclipse Public License
+* Project: http://www.eclemma.org/jacoco/index.html
+
+jacoco agent.rt (0.5.6)
+
+* License: Eclipse Public License
+* Project: http://www.eclemma.org/jacoco/
+
+Jacoco agent.rt Version: 0.4.0 (0.4.0)
+
+* License: Eclipse Public License
+* Project: http://www.eclemma.org/jacoco/index.html
+
+Jacoco Ant (0.5.0)
+
+* License: Eclipse Public License
+
+jacoco Ant (0.5.6)
+
+* License: Eclipse Public License, New BSD License (ASM content)
+* Project: http://www.eclemma.org/jacoco/
+
+Jacoco core (0.4.0)
+
+* License: Eclipse Public License
+
+Jacoco core (0.5.0)
+
+* License: Eclipse Public License
+
+jacoco org.jacoco.ant (0.5.6)
+
+* License: Eclipse Public License
+* Project: http://www.eclemma.org/jacoco/
+
+Jacoco report (0.4.0)
+
+* License: Eclipse Public License
+* Project: http://www.eclemma.org/jacoco/index.html
+
+Jacoco report (0.5.0)
+
+* License: Eclipse Public License
+* Source: http://www.eclemma.org/jacoco/index.html
+
+jacoco.agent (0.5.6)
+
+* License: Eclipse Public License
+* Project: http://www.eclemma.org/jacoco/
+
+jacoco.ant (0.4.0)
+
+* License: Eclipse Public License
+* Project: http://www.eclemma.org/jacoco/index.html
+
+jacoco.core (0.5.6)
+
+* License: Eclipse Public License
+* Project: http://www.eclemma.org/jacoco/
+
+jacoco.report (0.5.6)
+
+* License: Eclipse Public License, Apache License 2.0 (One File)
+* Project: http://www.eclemma.org/jacoco/
+
+javax.annotation (1.1)
+
+* License: Common Development and Distribution License
+
+Javax.annotation (1.2)
+
+* License: Common Development and Distribution License
+
+Jetty (6.1.15)
+
+* License: Apache License, 2.0 + Custom Permissive OS Licenses
+
+Jetty (Subset) (6.1.23)
+
+* License: Apache License, 2.0, Eclipse Public License, Permissive Open Source
+   Licenses
+
+jna-4.1.0.jar (4.1.0)
+
+* License: Apache License, 2.0
+
+jna-platform-4.1.0.jar (4.1.0)
+
+* License: Apache License, 2.0
+* Project: https://github.com/twall/jna
+
+jsch (0.1.28)
+
+* License: New BSD license
+
+JSch (0.1.35)
+
+* License: New BSD license
+* Project: http://www.jcraft.com/jsch/
+* Source: http://prdownloads.sourceforge.net/jsch/jsch-0.1.35.zip?download
+
+jsch (0.1.37)
+
+* License: New BSD license
+* Project: http://www.jcraft.com/jsch/
+* Source: http://prdownloads.sourceforge.net/jsch/jsch-0.1.37.zip?download
+
+JSch (0.1.41)
+
+* License: New BSD license
+
+jsch (0.1.44)
+
+* License: New BSD License
+
+JSch (0.1.46)
+
+* License: New BSD License
+
+JSch (0.1.50)
+
+* License: New BSD License
+* Project: http://www.jcraft.com/jsch/
+* Source: http://www.jcraft.com/jsch/
+
+Jsch (0.1.51)
+
+* License: New BSD License
+
+JSch (0.1.53)
+
+* License: New BSD license
+
+JSch (0.1.54)
+
+* License: New BSD license
+
+JSch 0.1.31 (0.1.31)
+
+* License: New BSD license
+
+jsch.agentproxy.core-0.0.9.jar (0.0.9)
+
+* License: New BSD License
+* Project: https://github.com/ymnk/jsch-agent-proxy
+
+jsch.agentproxy.jsch-0.0.9.jar (0.0.9)
+
+* License: New BSD license
+* Project: https://github.com/ymnk/jsch-agent-proxy
+
+jsch.agentproxy.pageant-0.0.9.jar (0.0.9)
+
+* License: New BSD license
+
+jsch.agentproxy.sshagent-0.0.9.jar (0.0.9)
+
+* License: New BSD license
+* Project: https://github.com/ymnk/jsch-agent-proxy
+
+jsch.agentproxy.usocket-jna-0.0.9.jar (0.0.9)
+
+* License: New BSD license
+
+jsoup (1.7.2)
+
+* License: MIT License
+
+Junit (3.8.2)
+
+* License: Common Public License 1.0
+
+Lucene Analyzers (2.9.1)
+
+* License: Apache License, 2.0, New BSD license
+
+Lucene Analyzers (3.5)
+
+* License: Apache License, 2.0, New BSD License 
+
+Lucene Core (2.9.1)
+
+* License: Apache License, 2.0
+
+Lucene Core (3.5.0)
+
+* License: Apache License, 2.0
+
+lucene-analyzers-common (5.2.1)
+
+* License: Apache License, 2.0, New BSD license, W3C License
+* Project: http://lucene.apache.org/core/
+
+lucene-analyzers-common (6.1.0)
+
+* License: Apache License, 2.0, New BSD license, W3C License
+* Project: https://lucene.apache.org/
+* Source:
+   https://archive.apache.org/dist/lucene/java/6.1.0/lucene-6.1.0-src.tgz
+
+lucene-analyzers-smartcn (5.2.1)
+
+* License: Apache License, 2.0
+
+lucene-analyzers-smartcn (6.1.0)
+
+* License: Apache License, 2.0
+* Project: https://lucene.apache.org/
+* Source:
+   https://archive.apache.org/dist/lucene/java/6.1.0/lucene-6.1.0-src.tgz
+
+lucene-core (5.2.1)
+
+* License: Apache License, 2.0, BSD Style, MIT License
+* Project: http://lucene.apache.org/core/
+* Source: http://apache.mirror.iphh.net/lucene/java/5.2.1/lucene-5.2.1-src.tgz
+
+lucene-core (6.1.0)
+
+* License: Apache License, 2.0, BSD Style, MIT License
+* Project: https://lucene.apache.org/core/
+* Source:
+   https://archive.apache.org/dist/lucene/java/6.1.0/lucene-6.1.0-src.tgz
+
+lucene-misc (6.1.0)
+
+* License: Apache License, 2.0
+* Project: https://lucene.apache.org/
+* Source:
+   https://archive.apache.org/dist/lucene/java/6.1.0/lucene-6.1.0-src.tgz
+
+lucene-queryparser (5.2.1)
+
+* License: Apache License, 2.0
+
+lucene-queryparser (6.1.0)
+
+* License: Apache License, 2.0
+* Project: https://lucene.apache.org/
+* Source:
+   https://archive.apache.org/dist/lucene/java/6.1.0/lucene-6.1.0-src.tgz
+
+Material Design Icons (2.0.0)
+
+* License: Creative Commons Attribution 4.0 International (CC BY 4.0 )
+
+Mockito (1.8.4)
+
+* License: Apache License, 2.0, New BSD license, MIT license
+
+Mozilla Binding Version - Ganymede (n/a)
+
+* License: Mozilla Public License 1.1 (MPL)
+* Project: www.mozilla.org
+* Source: www.mozilla.org
+
+Olsen time zone data Version: 2007e (n/a)
+
+* License: Public Domain
+
+org.apache.ant (1.6.5)
+
+* License: Apache License, 2.0
+
+org.apache.lucene (1.4.3)
+
+* License: Apache License, 2.0
+
+PNG unload Version: 1 (n/a)
+
+* License: MIT license
+
+SLF4J API (1.6.1)
+
+* License: MIT license, MIT license with no endorsement clause 
+
+Statically link XULRunner SDK Version: 24 (n/a)
+
+* License: Mozilla Public License 2.0 (MPL), New BSD License
+
+Usage of the material icon set from Google (n/a)
+
+* License: Apache-2.0
+* Project: https://github.com/google/material-design-icons
+
+Work derived from IJG JPEG Version: Release 6b,337 (n/a)
+
+* License: IJG License 
+
+XHTML DTDs Version: Versions 1.0 and (1.1)
+
+* License: W3C Document License
+* Project: http://www.w3c.org
+
+XML Graphics Commons (2.2)
+
+* License: Apache-2.0
+
+xml-apis.jar (1.3.04)
+
+* License: Apache License, 2.0, Public Domain, W3C
+
+XULRunner (1.9)
+
+* License: Mozilla Public License 1.1 (MPL)
+
+XULRunner 24 SDK Version: 24 (n/a)
+
+* License: Mozilla Public License 2.0 (MPL) 
+
+## Cryptography
+
+Content may contain encryption software. The country in which you are currently
+may have restrictions on the import, possession, and use, and/or re-export to
+another country, of encryption software. BEFORE using any encryption software,
+please check the country's laws, regulations and policies concerning the import,
+possession, or use, and re-export of encryption software, to see if this is
+permitted.
+
