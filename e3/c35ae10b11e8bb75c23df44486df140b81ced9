@@ -1,0 +1,7 @@
+Verified+1: CI Bot
+Code-Review+2: Mat Booth <mat.booth@redhat.com>
+Submitted-by: Mat Booth <mat.booth@redhat.com>
+Submitted-at: Sun, 07 Oct 2018 11:52:56 -0400
+Reviewed-on: https://git.eclipse.org/r/130536
+Project: platform/eclipse.platform.releng.aggregator
+Branch: refs/heads/master
