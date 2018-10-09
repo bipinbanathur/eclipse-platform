@@ -1165,7 +1165,7 @@
       value="${jvm}">
       <matches
         string="${javaversion}"
-        pattern='^java version "[11].*"' />
+        pattern='^version "[11].*"' />
     </condition>
     <condition
       property="J2SE-10.0"
@@ -1173,10 +1173,10 @@
       <or>
         <matches
           string="${javaversion}"
-          pattern='^java version "[10].*"' />
+          pattern='^version "[10].*"' />
         <matches
           string="${javaversion}"
-          pattern='^java version "[11].*"' />
+          pattern='^version "[11].*"' />
       </or>
     </condition>
     <condition
@@ -1185,13 +1185,13 @@
         <or>
           <matches
             string="${javaversion}"
-            pattern='^java version "[9].*"' />
+            pattern='^version "[9].*"' />
           <matches
         	string="${javaversion}"
-        	pattern='^java version "[10].*"' />
+        	pattern='^version "[10].*"' />
           <matches
               string="${javaversion}"
-              pattern='^java version "[11].*"' />
+              pattern='^version "[11].*"' />
         </or>
     </condition>
     <condition
@@ -1200,16 +1200,16 @@
         <or>
           <matches
             string="${javaversion}"
-            pattern='^java version "1\.[8].*"' />
+            pattern='^version "1\.[8].*"' />
           <matches
             string="${javaversion}"
-            pattern='^java version "[9].*"' />
+            pattern='^version "[9].*"' />
           <matches
           	string="${javaversion}"
-          	pattern='^java version "[10].*"' />
+          	pattern='^version "[10].*"' />
           <matches
             string="${javaversion}"
-            pattern='^java version "[11].*"' />
+            pattern='^version "[11].*"' />
         </or>
     </condition>
     <condition
@@ -1218,16 +1218,16 @@
         <or>
           <matches
             string="${javaversion}"
-            pattern='^java version "1\.[78].*"' />
+            pattern='^version "1\.[78].*"' />
           <matches
             string="${javaversion}"
-            pattern='^java version "[9].*"' />
+            pattern='^version "[9].*"' />
           <matches
           	string="${javaversion}"
-          	pattern='^java version "[10].*"' />
+          	pattern='^version "[10].*"' />
           <matches
             string="${javaversion}"
-            pattern='^java version "[11].*"' />
+            pattern='^version "[11].*"' />
         </or>
     </condition>
     <condition
@@ -1236,16 +1236,16 @@
         <or>
           <matches
             string="${javaversion}"
-            pattern='^java version "1\.[678].*"' />
+            pattern='^version "1\.[678].*"' />
           <matches
             string="${javaversion}"
-            pattern='^java version "[9].*"' />
+            pattern='^version "[9].*"' />
           <matches
           	string="${javaversion}"
-          	pattern='^java version "[10].*"' />
+          	pattern='^version "[10].*"' />
           <matches
             string="${javaversion}"
-            pattern='^java version "[11].*"' />
+            pattern='^version "[11].*"' />
         </or>
     </condition>
     <condition
@@ -1254,16 +1254,16 @@
         <or>
           <matches
             string="${javaversion}"
-            pattern='^java version "1\.[5678].*"' />
+            pattern='^version "1\.[5678].*"' />
           <matches
             string="${javaversion}"
-            pattern='^java version "[9].*"' />
+            pattern='^version "[9].*"' />
           <matches
           	string="${javaversion}"
-          	pattern='^java version "[10].*"' />
+          	pattern='^version "[10].*"' />
           <matches
             string="${javaversion}"
-            pattern='^java version "[11].*"' />
+            pattern='^version "[11].*"' />
         </or>
     </condition>
     <echo
