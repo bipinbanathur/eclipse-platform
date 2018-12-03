@@ -868,9 +868,7 @@
     <profile>
       <id>api-generation</id>
       <activation>
-        <property>
-          <name>!longnotexistingproperty</name>
-        </property>
+        <activeByDefault>true</activeByDefault>
       </activation>
       <build>
         <plugins>
