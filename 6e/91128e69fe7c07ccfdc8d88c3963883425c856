@@ -1,0 +1,7 @@
+Code-Review+2: Alexander Kurtakov <akurtako@redhat.com>
+Verified+1: Alexander Kurtakov <akurtako@redhat.com>
+Submitted-by: Alexander Kurtakov <akurtako@redhat.com>
+Submitted-at: Fri, 14 Dec 2018 11:07:34 -0500
+Reviewed-on: https://git.eclipse.org/r/133392
+Project: platform/eclipse.platform.releng.aggregator
+Branch: refs/heads/master
