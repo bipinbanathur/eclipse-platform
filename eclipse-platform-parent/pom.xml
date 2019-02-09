@@ -30,7 +30,7 @@
     If version number changed in one place, be sure to change in the other.
   -->
   <prerequisites>
-    <maven>3.5.4</maven>
+    <maven>3.5.9</maven>
   </prerequisites>
   <properties>
     <!-- As of Tycho 0.22, skipTests takes priority, if maven.test.skip also specified,
@@ -356,7 +356,7 @@
             <configuration>
               <rules>
                 <requireMavenVersion>
-                  <version>3.5.4</version>
+                  <version>3.5.9</version>
                 </requireMavenVersion>
               </rules>
             </configuration>
@@ -555,7 +555,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>3.1.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -570,7 +570,7 @@
         <plugin>
           <groupId>org.eclipse.jetty</groupId>
           <artifactId>jetty-jspc-maven-plugin</artifactId>
-          <version>9.4.0.v20161208</version>
+          <version>9.4.14.v20181114</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
