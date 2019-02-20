@@ -13,16 +13,11 @@
 #     Sravan Kumar Lakkimsetti - initial API and implementation
 #*******************************************************************************
 
-source common/common-functions.shsource
-
-buildDirectory=$(pwd)/siteDir
-BUILD_ENV_FILE=${buildDirectory}/buildproperties.shsource
-BUILD_ENV_FILE_PHP=${buildDirectory}/buildproperties.php
-BUILD_ENV_FILE_PROP=${buildDirectory}/buildproperties.properties
+source $WORKSPACE/cje-production/scripts/common-functions.shsource
 
 pushd mbscripts
-for i in $(ls |sort)
+for i in $(ls | sort)
 do
-  fn-run-command ./$i $BUILD_ENV_FILE
+  fn-run-command ./$i $WORKSPACE/cje-production/buildproperties.shsource
 done
 popd

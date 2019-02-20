@@ -45,7 +45,6 @@ fn-write-property ()
 
 }
 
-
 # this function executes command passed as command line parameter and
 # if that command fails it exit with the same error code as the failed command
 fn-run-command ()
