@@ -64,8 +64,8 @@
       but we'd still want the "marketing number" to be increased to reflect
       "a new yearly release".
     -->
-    <releaseNumberSDK>4.11</releaseNumberSDK>
-    <releaseNumberPlatform>4.11</releaseNumberPlatform>
+    <releaseNumberSDK>4.12</releaseNumberSDK>
+    <releaseNumberPlatform>4.12</releaseNumberPlatform>
 
 
     <!-- Using snapshot, or locally built (forked) snapshot version for bug 484000.
